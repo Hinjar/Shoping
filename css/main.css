@@ -1,0 +1,205 @@
+
+.modal_name{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.modal__info{
+    font-size: 15px;
+    width: 90%;
+}
+
+.market__item {
+    padding: 60px 0;
+    width: 33%;
+}
+
+.de {
+    width: 250px;
+    height: 320px;
+    border: 1px solid #cccccc;
+    margin: 0 auto;
+    display: grid;
+    cursor: pointer;
+    
+    transition: box-shadow .1s linear;
+}
+
+.de_after{
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+ 
+
+/* .de:hover {
+    margin-bottom: -100px;
+    height: 350px;
+    transition: 0.3s;
+    
+} */
+
+.market__item__img {
+    padding: 25px 25px 0 25px;
+    width: 100%;
+    max-width: 563px;
+    max-height: 685px;
+}
+
+.market__item__price, .market__item__info {
+    display: none;
+    text-align: center;
+
+}
+
+input{
+    margin-right: 15px;
+}
+
+
+
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    margin: 0 auto;
+    
+    overflow: hidden;
+}
+.market__color__down, .market__color__up {
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0 25px 0 25px;
+    transition: all ease .1s;
+}
+
+.market__color__down {
+    background-color: blue;
+}
+.market__color__up {
+    background-color: firebrick;
+}
+
+.modal__info {
+    padding-bottom: 40px;
+}
+
+.modal_name_o{
+    font-size: 20px;
+}
+
+.swiper-container {
+    margin-bottom: 40px;
+}
+
+
+
+.pic_one, .two, .three{
+    
+    position: absolute;
+    z-index: 2;
+    transition: all ease .1s;
+    width: 100%;
+}
+
+.two, .three{
+    display: none;
+}
+
+.hide{
+    
+    width: 250px;
+   height: 0;
+    position: absolute;
+    border: 1px solid #cccccc;
+    border-top: 0px;
+    margin: 0 auto;
+   
+}
+
+.hide_vis{
+    transition: height, box-shadow .2s linear ;
+    height: 80px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+.f{
+    justify-content: space-between;
+    width: 250px; 
+    margin: 0 auto;
+   
+    transition: box-shadow .1s linear;
+}
+
+.hide_elem{
+    
+   visibility: hidden;
+    margin-top: 20px;
+    opacity: 0;
+    transition: all .2s linear;
+    display: flex;
+   
+}
+
+.hide_elem_text{
+    
+    margin-right: 60px;
+    margin-left: 30px;
+}
+
+.hide_elem_logo{
+    cursor: pointer;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.logo{
+    width: 100%;
+}
+.hover_cont{
+   display: flex;
+}
+
+.hover_cont_block{
+    width: 33%;
+    height: 350px;
+    z-index: 5;
+}
+
+.hide_elem_vis{
+    visibility : visible;
+    opacity: 1;
+}
+
+.text_price{
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1200px)
+{
+    .swiper-container swiper-container-initialized swiper-container-horizontal{
+        height: 200px;
+    }
+    .market__color__down{
+        color: aliceblue;
+    }
+
+    .modal__info{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px ){
+    .modal_name{
+        font-size: 14px;
+    }
+
+    .modal__info{
+        font-size: 12px;
+    }
+
+}
